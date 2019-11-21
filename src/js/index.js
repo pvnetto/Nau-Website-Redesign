@@ -1,23 +1,46 @@
-const customDropdownToggler = document.querySelector('.nav .nav-item .dropdown-toggle');
-const customDropdown = document.querySelector('.nav .nav-item .dropdown-items');
+let customDropdownToggler;
+let customDropdown;
 
 /* Custom sidenav toggler parameters */
-const sidenav = document.querySelector('.sidenav');
-const customSidenavToggler = document.querySelector('.sidenav-toggler');
+let sidenav;
+let customSidenavToggler;
 
 /* Custom sidenav toggler recolor parameters */
-const togglerLines = document.querySelectorAll('.sidenav-toggler-line');
+let togglerLines;
 const sections = document.querySelectorAll('section');
 let currentSection;
+let isSidenavEnabled = false;
 
 window.addEventListener('scroll', animateNavColor);
-customDropdownToggler.addEventListener('click', toggleDropdown);
-customSidenavToggler.addEventListener('click', toggleSidenav);
 
-let isSidenavEnabled = false;
-let isSidenavTogglerEnabled = function () {
+loadComponentToPage('./components/footer.html', document.querySelector('footer'));
+loadComponentToPage('./components/sidenav.html', document.querySelector('nav'), setupSidenav);
+
+
+const isSidenavTogglerEnabled = function () {
     return window.getComputedStyle(customSidenavToggler, null).getPropertyValue('display') != 'none';
 }
+
+function loadComponentToPage(path, parent, initCallback) {
+    return fetch(path)
+        .then(componentResponse => componentResponse.text())
+        .then(componentHTML => {
+            parent.innerHTML = componentHTML;
+            initCallback && initCallback();
+        });
+}
+
+function setupSidenav() {
+    customDropdownToggler = document.querySelector('.nav .nav-item .dropdown-toggle');
+    customSidenavToggler = document.querySelector('.sidenav-toggler');
+    customDropdown = document.querySelector('.nav .nav-item .dropdown-items');
+    sidenav = document.querySelector('.sidenav');
+    togglerLines = document.querySelectorAll('.sidenav-toggler-line');
+
+    customDropdownToggler.addEventListener('click', toggleDropdown);
+    customSidenavToggler.addEventListener('click', toggleSidenav);
+}
+
 
 function toggleDropdown(e) {
     if (isSidenavEnabled) {
