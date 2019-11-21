@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-task:scss-compile": "node-sass-chokidar --source-map true src/scss/ -o src/css",
+    "build-task:bootstrap-compile": "node-sass-chokidar --source-map true node_modules/bootstrap/scss/bootstrap.scss -o src/css",
     "build-task:autoprefixer": "postcss src/css/*.css --use autoprefixer -d src/css",
     "sass:build": "npm-run-all -p build-task:*",
     "sass:watch": "chokidar \"src/scss/**/*.scss\" -c \"npm run sass:build\"",
