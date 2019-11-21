@@ -1,0 +1,29 @@
+/* Bootstrap overrides */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Colors
+$primary: #FF5200;
+$secondary: #967B6E;
+
+// Fonts
+$font-family-base: 'Open Sans', sans-serif;
+
+.display-4 {
+    margin-bottom: 5rem;
+}
+
+.nav {
+    a {
+        color: $secondary;
+    }
+}
+
+.btn.btn-lg {
+    padding: 1rem 3.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";

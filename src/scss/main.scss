@@ -1,0 +1,363 @@
+@import '_custom';
+@import '_config';
+@import '_navigation';
+
+#content {
+    margin-left: var(--sidebar-width);     // Offsets the content horizontally by the width of the sidebar.
+}
+
+.logo {
+    width: 200px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-item {
+        width: 50px;
+        height: 50px;
+        margin: 0 0.3rem;
+
+        border: 2px solid $primary;
+        border-radius: 100%;
+
+        transition: all 0.3s;
+
+        i {
+            color: $primary;
+            transform: rotateY(0deg);
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            text-decoration: none;
+            opacity: 0.8;
+            
+            i {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}
+
+.home-header {
+    @include bgNoInterference('../assets/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+    min-height: 100vh;
+    min-width: 100%;
+    color: white;
+
+    p {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    &-msg {
+        margin-bottom: 3rem;
+
+        .logo-name {
+
+            color: $primary;
+    
+            &-main {
+                font-size: 10rem;
+                margin-bottom: 0rem;
+                line-height: 0.9;
+            }
+    
+            &-sub {
+                font-size: 3.3rem;
+            }
+        }
+    }
+
+    &-arrow {
+        position: relative;
+        width: 80px;
+        bottom: -23vh;
+        left: 0;
+        
+        animation: arrow-blink 2s;
+        animation-iteration-count: infinite;
+
+        @keyframes arrow-blink {
+            0% {
+                opacity: 0.1;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.1;
+            }
+        }
+    }
+
+    .btn {
+        margin: 0 3rem;
+    }
+
+}
+
+section {
+    .container-fluid {
+        padding: $section-padding;
+        position: relative;
+    }
+
+    &.announce {
+        background-color: black;
+        position: relative;
+        min-height: 50vh;
+        color: white;
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        &-menu {
+            @include bgNoInterference('../assets/pexels-photo-1040685.jpeg', brightness(0.3) blur(1px));
+        }
+
+        &-units {
+            @include bgNoInterference('../assets/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+        }
+
+        .btn {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &.home-info {
+        .card {
+            .card-img-top {
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &.home-news {
+        .card {
+            .card-img-top {
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &.home-contact {
+        position: relative;
+        color: white;
+
+        @include bgNoInterference('../assets/pexels-photo-1040685.jpeg', brightness(0.3));
+    }
+}
+
+footer {
+    .footer-contact {
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $primary;
+        }
+
+        background-color: $alt-1;
+        padding: $section-padding;
+
+        &-units {
+            margin-bottom: 5rem;
+            &-item {
+                p {
+                    margin-bottom: 0.3rem;
+                    word-wrap: break-word;
+                }
+            }
+        }
+
+        .nav {
+            a {
+                padding: 0;
+            }
+        }
+    }
+
+    .footer-dev-info {
+        padding: 3rem 0;
+        background-color: $primary;
+
+        p {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .social-media-icons {
+            &-item {
+                border-color: white;
+
+                i {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.page-header {
+    color: white;
+    
+    &-history {
+        @include bgNoInterference('../assets/cooking-cuisine-delicious-262982.jpg', brightness(0.5));
+    }
+
+    &-wine {
+        @include bgNoInterference('../assets/cellar-classic-shelves-774455.jpg', brightness(0.7));
+    }
+
+    &-units {
+        @include bgNoInterference('../assets/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+    }
+
+    &-menu {
+        @include bgNoInterference('../assets/close-up-cooking-dinner-46239.jpg');
+    }
+
+    &-contact {
+        @include bgNoInterference('../assets/after-business-hours-architecture-bar-34650.jpg', brightness(0.6));
+    }
+
+    .display-4 {
+        margin-bottom: 0;
+    }
+}
+
+.info-page {
+    &-item:nth-child(1) {
+        padding-bottom: 8rem;
+    }
+}
+
+.unit-page {
+    img {
+        min-height: 80vh;
+        object-fit: cover;
+    }
+
+    h2 {
+        color: $primary;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-weight: 600;
+    }
+
+    &-info {
+        color: $secondary;
+        p {
+            margin-bottom: 0;
+            word-wrap: break-word;
+        }
+    }
+}
+
+.news {
+    &-container {
+        .pagination {
+            margin-top: 2rem;
+        }
+    }
+
+    &-item {
+        padding: 3rem 1rem;
+        border: 1px solid $primary;
+        background-color: $alt-1;
+        margin-bottom: 5rem;
+
+        &-info {
+            &-author {
+                font-size: 0.9rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.menu-page {
+    &-nav {
+        margin-bottom: 5rem;
+
+        .nav {
+            .active {
+                font-weight: 600;
+                border-bottom: 3px solid $primary;
+            }
+
+            .nav-link {
+                padding: 0.5rem 0.5rem;
+            }
+        }
+
+        hr {
+            margin: 0;
+            border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+
+    &-container {
+        // @include bgNoInterference('../assets/background-menu.jpg', saturate(0.9));
+        background-color: $alt-1;
+        border-radius: 10px;
+
+        &::before {
+            border-radius: 10px;
+        }
+        
+        padding: 5rem 1rem;
+    }
+
+    &-title {
+        color: $secondary;
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+
+    &-item {
+        margin: 1.5rem 0;
+        padding: 2rem 1rem;
+        background-color: rgba($color: $primary, $alpha: 0.4);
+
+        border-radius: 5px;
+
+        h3 {
+            color: $primary;
+            font-weight: 500;
+        }
+    }
+}
+
+.contact-page {
+    &-title {
+        color: $primary;
+    }
+
+    &-info {
+        margin-top: 5rem;
+        
+        h5 {
+            color: $primary;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+
+            li {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+@import '_mobile';

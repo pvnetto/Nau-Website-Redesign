@@ -1,0 +1,117 @@
+.sidenav {
+    @include easeOut;
+    
+    width: var(--sidebar-width);   // This is the sidebar's width. The page's content should be offset horizontally by this size.
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+
+    background-color: $sidenav-color;
+    overflow-x: hidden;
+
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.2);
+
+    &.toggled {
+        transform: translateX(0%);
+    }
+
+    .nav {
+        .nav-item {
+            padding: 0.7rem 0;
+
+            a {
+                padding: 0;
+                font-size: 1.4rem;
+                transition: padding 0.3s;
+
+                
+                &.toggled {
+                    padding-bottom: 1.3rem;
+                    position: relative;
+                }
+            }
+
+            .dropdown-items {
+                visibility: hidden;
+                position: absolute;
+                top: 55%;
+
+                a {
+                    padding-left: 0.5rem;
+
+                    font-size: 1rem;
+                    
+                    transform: translateX(-100%);
+                    transition-property: transform;
+                }
+                
+                &.toggled {
+                    visibility: visible;
+
+                    a {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &-toggler {
+        @include easeOut;
+        
+        display: none;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        
+        cursor: pointer;
+
+        &-line {
+            @include easeOut;
+            width: 40px;
+            height: 3px;
+            margin-bottom: 10px;
+            border-radius: 2px;
+
+            background: white;
+        }
+
+        // Rotate into X animation for the menu button
+        &.close {
+            top: 30px;
+
+            transform: translateX(180px);
+            .sidenav-toggler-line {
+                margin-bottom: 0px;
+                // Line 1: Rotate
+                &:nth-child(1) {
+                    transform: translateY(100%) rotate(45deg);
+                }
+
+                // Line 2: Hide
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-100%) rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+// Delay each nav item slide
+@for $x from 1 through 2 {
+    .nav {
+        .dropdown-items {
+            a:nth-child(#{$x}) {
+                transition-duration: $x * 0.15s;
+            }
+        }
+    }
+}

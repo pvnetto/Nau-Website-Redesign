@@ -1,0 +1,75 @@
+$section-padding: 8rem 0;
+
+$sidenav-color: #EBDCCB;
+$alt-1: #fff8f0;
+
+:root {
+    --sidebar-width: 350px;
+}
+
+section {
+    background-color: white;
+}
+
+p {
+    color: $secondary;
+    .alt-text {
+        color: white;
+    }
+}
+
+@mixin easeOut($time: 0.3s) {
+    transition: all $time ease-out;
+}
+
+@mixin bgNoInterference($bg-url, $filters: none) {
+    position: relative;
+    background: black;
+
+    &::before {
+        content: "";
+        background: url($bg-url) center center no-repeat;
+        background-size: cover;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        filter: $filters;
+    }
+}
+
+// Media query mixins
+@mixin mediaXS {
+    @media screen and (max-width: 380px) {
+        @content;
+    }
+}
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXL {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
+
+

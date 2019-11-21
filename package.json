@@ -1,0 +1,29 @@
+{
+  "name": "nau-webpage",
+  "version": "1.0.0",
+  "description": "A redesigned page for the restaurant NAU Frutos do Mar using HTML, CSS, SASS and Bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Restaurant",
+    "HTML",
+    "CSS",
+    "SASS",
+    "Bootstrap",
+    "Redesign",
+    "Paiva"
+  ],
+  "author": "Paiva",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}
