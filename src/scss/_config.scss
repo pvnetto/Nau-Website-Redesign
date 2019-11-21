@@ -18,6 +18,14 @@ p {
     }
 }
 
+a {
+    color: $sidenav-color;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 @mixin easeOut($time: 0.3s) {
     transition: all $time ease-out;
 }
