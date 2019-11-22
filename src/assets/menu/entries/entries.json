@@ -1,0 +1,30 @@
+{
+    "title": "Entradas",
+    "dishes": [
+        {
+            "img": "salad.jpg",
+            "title": "Salada Dunas",
+            "description": "Camarão salteado, folhas mistas, tomate fresco, tomate seco, cenoura, azeitonas, mini-cebolas, lascas de queijo parmesão e torradas. Regada com molho artesanal suave de mostarda e azeite."
+        },
+        {
+            "img": "shrimps.jpg",
+            "title": "Camarão na manteiga acebolado",
+            "description": "Camarão sem casca na manteiga e acebolado, servido com macaxeira frita."
+        },
+        {
+            "img": "breads.jpg",
+            "title": "Cesta de pães artesanais",
+            "description": "Pães e torradas artesanais servidos com dueto de azeites e patê."
+        },
+        {
+            "img": "cooked-shrimp.jpg",
+            "title": "Camarão empanado com gergelim",
+            "description": "Camarão empanado com gergelim, acompanhado de molho de queijo e azeite cítrico."
+        },
+        {
+            "img": "pots.jpg",
+            "title": "Potinhos",
+            "description": "Camarão, carne seca, caranguejo e carne de sol com nata."
+        }
+    ]
+}

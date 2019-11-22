@@ -1,0 +1,35 @@
+{
+    "title": "Pratos principais",
+    "dishes": [
+        {
+            "img": "kids-plate.jpg",
+            "title": "Prato Kids",
+            "description": "Cubinhos de filé mignon ou filé de frango servidos com arroz branco e purê ou spaghetti ao molho de tomate."
+        },
+        {
+            "img": "stew.jpg",
+            "title": "Moqueca de Camarão e Peixe",
+            "description": "Moqueca de camarão e peixe refogada com verduras, leite de coco e azeite de dendê. Acompanha arroz branco, pirão e farofa de manteiga da terra com dendê."
+        },
+        {
+            "img": "pasta.jpg",
+            "title": "Massa de Frutos do Mar",
+            "description": "Camarão, polvo, lula e mexilhão salteados com azeite, alho, molho de tomate e manjericão, servidos com spaghetti."
+        },
+        {
+            "img": "fillet.jpg",
+            "title": "Filé Barlavento",
+            "description": "Medalhões de filé mignon com molho de funghi secchi com arroz cremoso de queijo coalho e batatas coradas."
+        },
+        {
+            "img": "fish-fillet.jpg",
+            "title": "Filé de Peixe com Camarões Salteados",
+            "description": "Filé de peixe na chapa com camarões salteados no azeite aromatizado, alcaparras e cogumelos. Acompanha legumes assados e arroz com brócolis."
+        },
+        {
+            "img": "seafood-plate.jpg",
+            "title": "Frutos do Mar na chapa",
+            "description": "Camarão, lagosta, polvo, lula e mexilhão dourados na chapa na manteiga da terra, tomate cereja, pimentões coloridos, champignon e brócolis. Acompanha arroz de brócolis."
+        }
+    ]
+}

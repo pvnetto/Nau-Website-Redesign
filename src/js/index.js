@@ -11,14 +11,8 @@ const sections = document.querySelectorAll('section');
 let currentSection;
 let isSidenavEnabled = false;
 
-window.addEventListener('scroll', animateNavColor);
-
-loadComponentToPage('./components/footer.html', document.querySelector('footer'));
-loadComponentToPage('./components/sidenav.html', document.querySelector('nav'), setupSidenav);
-
-
 const isSidenavTogglerEnabled = function () {
-    return window.getComputedStyle(customSidenavToggler, null).getPropertyValue('display') != 'none';
+    return customSidenavToggler && window.getComputedStyle(customSidenavToggler, null).getPropertyValue('display') != 'none';
 }
 
 function loadComponentToPage(path, parent, initCallback) {
@@ -30,7 +24,7 @@ function loadComponentToPage(path, parent, initCallback) {
         });
 }
 
-function setupSidenav() {
+const setupSidenav = () => {
     customDropdownToggler = document.querySelector('.nav .nav-item .dropdown-toggle');
     customSidenavToggler = document.querySelector('.sidenav-toggler');
     customDropdown = document.querySelector('.nav .nav-item .dropdown-items');
@@ -42,7 +36,7 @@ function setupSidenav() {
 }
 
 
-function toggleDropdown(e) {
+const toggleDropdown = (e) => {
     if (isSidenavEnabled) {
         customDropdown.classList.remove('toggled');
         customDropdownToggler.classList.remove('toggled');
@@ -55,7 +49,7 @@ function toggleDropdown(e) {
     }
 }
 
-function toggleSidenav(e) {
+const toggleSidenav = (e) => {
     if (sidenav.classList.contains('toggled')) {
         sidenav.classList.remove('toggled');
         customSidenavToggler.classList.remove('close');
@@ -67,7 +61,7 @@ function toggleSidenav(e) {
 }
 
 // Luminance values range from 0-255, 0 being the darkest and 255 the lightest
-function getColorLuminance(color) {
+const getColorLuminance = (color) => {
     let r = parseInt(color[0]);
     let g = parseInt(color[1]);
     let b = parseInt(color[2]);
@@ -75,7 +69,7 @@ function getColorLuminance(color) {
     return luminance;
 }
 
-function animateNavColor(e) {
+const animateNavColor = (e) => {
     if (isSidenavTogglerEnabled()) {
         let scrollHeight = window.scrollY;
         let previousSection = currentSection;
@@ -115,3 +109,8 @@ function animateNavColor(e) {
         }
     }
 }
+
+window.addEventListener('scroll', animateNavColor);
+
+loadComponentToPage('./components/footer.html', document.querySelector('footer'));
+loadComponentToPage('./components/sidenav.html', document.querySelector('nav'), setupSidenav);

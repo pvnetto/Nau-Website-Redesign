@@ -230,7 +230,7 @@ footer {
     }
 
     &-menu {
-        @include bgNoInterference('../assets/close-up-cooking-dinner-46239.jpg');
+        @include bgNoInterference('../assets/menu/entries/close-up-cooking-dinner-46239.jpg');
     }
 
     &-contact {
@@ -316,7 +316,6 @@ footer {
     }
 
     &-container {
-        // @include bgNoInterference('../assets/background-menu.jpg', saturate(0.9));
         background-color: $alt-1;
         border-radius: 10px;
 
@@ -325,6 +324,11 @@ footer {
         }
         
         padding: 5rem 1rem;
+
+        
+        hr {
+            border-top-width: 2px;
+        }
     }
 
     &-title {
@@ -336,8 +340,6 @@ footer {
     &-item {
         margin: 1.5rem 0;
         padding: 2rem 1rem;
-        background-color: rgba($color: $primary, $alpha: 0.4);
-
         border-radius: 5px;
 
         h3 {
@@ -345,6 +347,7 @@ footer {
             font-weight: 500;
         }
     }
+
 }
 
 .contact-page {

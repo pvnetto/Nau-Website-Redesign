@@ -1,0 +1,15 @@
+{
+    "title": "Bebidas",
+    "dishes": [
+        {
+            "img": "juices.jpg",
+            "title": "Suco de Frutas",
+            "description": "Cajá, maracujá, laranja, acerola, abacaxi, abacaxi com hortelã, mangaba, graviola, limão, uva, goiaba e morango."
+        },
+        {
+            "img": "caipirinha.jpg",
+            "title": "Caipirinhas e Caipiroskas",
+            "description": "Cajá, morango, kiwi, limão e uva."
+        }
+    ]
+}

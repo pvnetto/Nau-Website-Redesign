@@ -1,0 +1,30 @@
+{
+    "title": "Sobremesas",
+    "dishes": [
+        {
+            "img": "mousse.jpg",
+            "title": "Sobremesa Nau",
+            "description": "Delicioso mousse de chocolate, calda quente de brigadeiro, sorvete de creme e castanhas caramelizadas."
+        },
+        {
+            "img": "vanilla-cream.jpg",
+            "title": "Rosa dos Ventos",
+            "description": "Creme de baunilha, geleia de morango fresco quente e sorvete de creme."
+        },
+        {
+            "img": "cocada.jpg",
+            "title": "Duo de Cocada",
+            "description": "Duo de cocada branca e cocada morena."
+        },
+        {
+            "img": "banana-dessert.jpg",
+            "title": "Banana Caramelizada",
+            "description": "Banana caremelizada quente com sorvete de creme e castanhas caramelizadas."
+        },
+        {
+            "img": "truffle-pie.jpg",
+            "title": "Torta Trufada",
+            "description": "Torta trufada de chocolate branco e chocolate meio amargo."
+        }
+    ]
+}
