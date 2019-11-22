@@ -1,0 +1,54 @@
+{
+    "natal": {
+        "location": "Natal/RN",
+        "schedule": [
+            "Seg à Qua: 12h às 15h30 - 18h30 às 22h",
+            "Qui à Sex: 12h às 15h30 - 18h30 às 23h30",
+            "Sáb: 12h às 23h30",
+            "Dom: 11h30h às 22h"
+        ],
+        "phone": "(84) 3026-6333",
+        "email": "comercialrn@naufrutosdomar.com.br",
+        "address": "Av. Odilon Gomes de Lima, 1772 - Cidade Jardim",
+        "payment": "Dinheiro, Cartões de Crédito e Débito: Visa, Mastercard, Visa Electron, Maestro, American Express, Sodexo"
+    },
+    "pb_praia": {
+        "location": "João Pessoa/PB - Praia",
+        "schedule": [
+            "Seg à Qua: 12h às 15h30 - 18h30 às 22h",
+            "Qui à Sex: 12h às 15h30 - 18h30 às 23h30",
+            "Sáb: 12h às 23h30",
+            "Dom: 11h30h às 22h"
+        ],
+        "phone": "(83) 3021-8003",
+        "email": "comercialpb@naufrutosdomar.com.br",
+        "address": "Rua Lupercio Branco, 130 Manaíra",
+        "payment": "Dinheiro, Cartões de Crédito e Débito: Visa, Mastercard, Visa Electron, Maestro, American Express, Sodexo"
+    },
+    "pb_shopping": {
+        "location": "João Pessoa/PB - Manaíra Shopping",
+        "schedule": [
+            "Seg à Qua: 12h às 15h30 - 18h30 às 22h",
+            "Qui à Sex: 12h às 15h30 - 18h30 às 23h30",
+            "Sáb: 12h às 23h30",
+            "Dom: 11h30h às 22h"
+        ],
+        "phone": "(83) 3690-0505",
+        "email": "comercialpb2@naufrutosdomar.com.br",
+        "address": "Manaíra Shopping, 2º piso, Av. Gov. Flávio Ribeiro Coutinho, s/n, Manaíra",
+        "payment": "Dinheiro, Cartões de Crédito e Débito: Visa, Mastercard, Visa Electron, Maestro, American Express, Sodexo"
+    },
+    "brasilia": {
+        "location": "Brasília/DF",
+        "schedule": [
+            "Seg à Qua: 12h às 15h30 - 18h30 às 22h",
+            "Qui à Sex: 12h às 15h30 - 18h30 às 23h30",
+            "Sáb: 12h às 23h30",
+            "Dom: 11h30h às 22h"
+        ],
+        "phone": "(61) 3252-0155",
+        "email": "comercialdf@naufrutosdomar.com.br",
+        "address": "SCE Sul, Trecho 2, Conj. 41 Próximo à Ponte JK",
+        "payment": "Dinheiro, Cartões de Crédito e Débito: Visa, Mastercard, Visa Electron, Maestro, American Express, Sodexo"
+    }
+}

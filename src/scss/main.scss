@@ -119,7 +119,7 @@ section {
         }
 
         &-menu {
-            @include bgNoInterference('../assets/pexels-photo-1040685.jpeg', brightness(0.3) blur(1px));
+            @include bgNoInterference('../assets/pexels-photo-1040685.jpeg', brightness(0.3));
         }
 
         &-units {
@@ -230,7 +230,7 @@ footer {
     }
 
     &-menu {
-        @include bgNoInterference('../assets/menu/entries/close-up-cooking-dinner-46239.jpg');
+        @include bgNoInterference('../assets/menu/entries/salad.jpg');
     }
 
     &-contact {
