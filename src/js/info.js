@@ -4,10 +4,10 @@ const addressContainer = document.querySelector('.unit-page-info-address');
 
 const getQueryVariable = (variable) => {
     // window.location is the URL for the current page
-    let query = window.location.search.substring(1);
+    const query = window.location.search.substring(1);
 
     // Splits URL variables into multiple strings
-    let vars = query.split("&");
+    const vars = query.split("&");
     for (let i = 0; i < vars.length; i++) {
         let pair = vars[i].split("=");
         if (pair[0] === variable) {
