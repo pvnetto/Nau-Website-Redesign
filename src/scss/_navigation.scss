@@ -23,15 +23,24 @@
             padding: 0.7rem 0;
 
             a {
+                color: #000;
+                opacity: 0.8;
+
                 padding: 0;
                 font-size: 1.2rem;
-                transition: padding 0.3s;
 
+                transition: padding 0.3s;
+                transition: color 0.2s ease;
                 
                 &.toggled {
                     padding-bottom: 1.3rem;
                     position: relative;
                 }
+
+                &:hover, &.active {
+                    color: $secondary;
+                }
+
             }
 
             i {

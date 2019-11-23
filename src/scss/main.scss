@@ -10,6 +10,25 @@
     width: 200px;
 }
 
+.img-cover {
+    object-fit: cover;
+}
+
+.post {
+    margin-bottom: 5rem;
+
+    &-header{
+        transform: translateY(-50%);
+        color: white;
+    }
+
+    &-content {
+        p {
+            margin: 2rem 0;
+        }
+    }
+}
+
 .social-media-icons {
     display: flex;
     flex-direction: row;
