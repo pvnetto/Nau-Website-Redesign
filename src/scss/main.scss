@@ -20,7 +20,7 @@
         height: 50px;
         margin: 0 0.3rem;
 
-        border: 2px solid $primary;
+        border: 1px solid $primary;
         border-radius: 100%;
 
         transition: all 0.3s;
@@ -43,7 +43,7 @@
 }
 
 .home-header {
-    @include bgNoInterference('../assets/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+    @include bgNoInterference('../assets/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
     min-height: 100vh;
     min-width: 100%;
     color: white;
@@ -119,11 +119,11 @@ section {
         }
 
         &-menu {
-            @include bgNoInterference('../assets/pexels-photo-1040685.jpeg', brightness(0.3));
+            @include bgNoInterference('../assets/images/pexels-photo-1040685.jpeg', brightness(0.3));
         }
 
         &-units {
-            @include bgNoInterference('../assets/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+            @include bgNoInterference('../assets/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
         }
 
         .btn {
@@ -153,7 +153,7 @@ section {
         position: relative;
         color: white;
 
-        @include bgNoInterference('../assets/pexels-photo-1040685.jpeg', brightness(0.3));
+        @include bgNoInterference('../assets/images/pexels-photo-1040685.jpeg', brightness(0.3));
     }
 }
 
@@ -218,15 +218,15 @@ footer {
     color: white;
     
     &-history {
-        @include bgNoInterference('../assets/cooking-cuisine-delicious-262982.jpg', brightness(0.5));
+        @include bgNoInterference('../assets/images/cooking-cuisine-delicious-262982.jpg', brightness(0.5));
     }
 
     &-wine {
-        @include bgNoInterference('../assets/cellar-classic-shelves-774455.jpg', brightness(0.7));
+        @include bgNoInterference('../assets/images/cellar-classic-shelves-774455.jpg', brightness(0.7));
     }
 
     &-units {
-        @include bgNoInterference('../assets/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+        @include bgNoInterference('../assets/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
     }
 
     &-menu {
@@ -234,7 +234,7 @@ footer {
     }
 
     &-contact {
-        @include bgNoInterference('../assets/after-business-hours-architecture-bar-34650.jpg', brightness(0.6));
+        @include bgNoInterference('../assets/images/after-business-hours-architecture-bar-34650.jpg', brightness(0.6));
     }
 
     .display-4 {
@@ -282,7 +282,7 @@ footer {
     &-item {
         padding: 3rem 1rem;
         border: 1px solid $primary;
-        background-color: $alt-1;
+        // background-color: $alt-1;
         margin-bottom: 5rem;
 
         &-info {

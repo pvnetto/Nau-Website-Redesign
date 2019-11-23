@@ -112,5 +112,5 @@ const animateNavColor = (e) => {
 
 window.addEventListener('scroll', animateNavColor);
 
-loadComponentToPage('./components/footer.html', document.querySelector('footer'));
-loadComponentToPage('./components/sidenav.html', document.querySelector('nav'), setupSidenav);
+loadComponentToPage('./commons/footer.html', document.querySelector('footer'));
+loadComponentToPage('./commons/sidenav.html', document.querySelector('nav'), setupSidenav);

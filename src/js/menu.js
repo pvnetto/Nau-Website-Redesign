@@ -39,7 +39,7 @@ const setupMenu = (menuData, type) => {
 
 const init = async () => {
     // Loads menu item HTML
-    const itemResponse = await fetch('./components/menu-item.html');
+    const itemResponse = await fetch('./commons/menu-item.html');
     menuItemHTML = await itemResponse.text();
 
     menuTypeItems.forEach(item => item.addEventListener('click', (e) => loadMenu(e.target)));
