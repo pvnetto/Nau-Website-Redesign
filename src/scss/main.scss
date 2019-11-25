@@ -72,7 +72,7 @@
 }
 
 .home-header {
-    @include bgNoInterference('../assets/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+    @include bgNoInterference('../public/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
     min-height: 100vh;
     min-width: 100%;
     color: white;
@@ -148,11 +148,11 @@ section {
         }
 
         &-menu {
-            @include bgNoInterference('../assets/images/pexels-photo-1040685.jpeg', brightness(0.3));
+            @include bgNoInterference('../public/images/pexels-photo-1040685.jpeg', brightness(0.3));
         }
 
         &-units {
-            @include bgNoInterference('../assets/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+            @include bgNoInterference('../public/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
         }
 
         .btn {
@@ -182,7 +182,7 @@ section {
         position: relative;
         color: white;
 
-        @include bgNoInterference('../assets/images/pexels-photo-1040685.jpeg', brightness(0.3));
+        @include bgNoInterference('../public/images/pexels-photo-1040685.jpeg', brightness(0.3));
     }
 }
 
@@ -247,23 +247,23 @@ footer {
     color: white;
     
     &-history {
-        @include bgNoInterference('../assets/images/cooking-cuisine-delicious-262982.jpg', brightness(0.5));
+        @include bgNoInterference('../public/images/cooking-cuisine-delicious-262982.jpg', brightness(0.5));
     }
 
     &-wine {
-        @include bgNoInterference('../assets/images/cellar-classic-shelves-774455.jpg', brightness(0.7));
+        @include bgNoInterference('../public/images/cellar-classic-shelves-774455.jpg', brightness(0.7));
     }
 
     &-units {
-        @include bgNoInterference('../assets/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
+        @include bgNoInterference('../public/images/alcohol-architecture-bar-260922.jpg', brightness(0.25));
     }
 
     &-menu {
-        @include bgNoInterference('../assets/menu/entries/salad.jpg');
+        @include bgNoInterference('../public/menu/entries/salad.jpg');
     }
 
     &-contact {
-        @include bgNoInterference('../assets/images/after-business-hours-architecture-bar-34650.jpg', brightness(0.6));
+        @include bgNoInterference('../public/images/after-business-hours-architecture-bar-34650.jpg', brightness(0.6));
     }
 
     .display-4 {

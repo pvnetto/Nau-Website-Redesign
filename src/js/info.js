@@ -38,7 +38,7 @@ const updatePageInfo = (unitData) => {
 const init = async () => {
     const unit = getQueryVariable('unit');
 
-    const unitsResponse = await fetch('./assets/units.json');
+    const unitsResponse = await fetch('./public/units.json');
     const unitsData = await unitsResponse.json();
     const unitData = unitsData[unit];
 

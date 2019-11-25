@@ -8,7 +8,7 @@ const loadMenu = async (menuItem) => {
     menuItem.classList.add('active');
 
     const menuType = menuItem.dataset.menu;
-    const menuResponse = await fetch(`./assets/menu/${menuType}/${menuType}.json`);
+    const menuResponse = await fetch(`./public/menu/${menuType}/${menuType}.json`);
     const menuData = await menuResponse.json();
 
     setupMenu(menuData, menuType);
@@ -29,7 +29,7 @@ const setupMenu = (menuData, type) => {
 
         itemTitle.textContent = menuItemData.title;
         itemDescription.textContent = menuItemData.description;
-        itemImg.src = `./assets/menu/${type}/${menuItemData.img}`;
+        itemImg.src = `./public/menu/${type}/${menuItemData.img}`;
 
         menuFragment.appendChild(menuItem);
     });

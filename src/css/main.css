@@ -7719,7 +7719,7 @@ p {
   color: white; }
   .home-header::before {
     content: "";
-    background: url("../assets/images/alcohol-architecture-bar-260922.jpg") center center no-repeat;
+    background: url("../public/images/alcohol-architecture-bar-260922.jpg") center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -7785,7 +7785,7 @@ section.announce {
     background: black; }
     section.announce-menu::before {
       content: "";
-      background: url("../assets/images/pexels-photo-1040685.jpeg") center center no-repeat;
+      background: url("../public/images/pexels-photo-1040685.jpeg") center center no-repeat;
       background-size: cover;
       position: absolute;
       top: 0;
@@ -7799,7 +7799,7 @@ section.announce {
     background: black; }
     section.announce-units::before {
       content: "";
-      background: url("../assets/images/alcohol-architecture-bar-260922.jpg") center center no-repeat;
+      background: url("../public/images/alcohol-architecture-bar-260922.jpg") center center no-repeat;
       background-size: cover;
       position: absolute;
       top: 0;
@@ -7828,7 +7828,7 @@ section.home-contact {
   background: black; }
   section.home-contact::before {
     content: "";
-    background: url("../assets/images/pexels-photo-1040685.jpeg") center center no-repeat;
+    background: url("../public/images/pexels-photo-1040685.jpeg") center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -7873,7 +7873,7 @@ footer .footer-dev-info {
     background: black; }
     .page-header-history::before {
       content: "";
-      background: url("../assets/images/cooking-cuisine-delicious-262982.jpg") center center no-repeat;
+      background: url("../public/images/cooking-cuisine-delicious-262982.jpg") center center no-repeat;
       background-size: cover;
       position: absolute;
       top: 0;
@@ -7887,7 +7887,7 @@ footer .footer-dev-info {
     background: black; }
     .page-header-wine::before {
       content: "";
-      background: url("../assets/images/cellar-classic-shelves-774455.jpg") center center no-repeat;
+      background: url("../public/images/cellar-classic-shelves-774455.jpg") center center no-repeat;
       background-size: cover;
       position: absolute;
       top: 0;
@@ -7901,7 +7901,7 @@ footer .footer-dev-info {
     background: black; }
     .page-header-units::before {
       content: "";
-      background: url("../assets/images/alcohol-architecture-bar-260922.jpg") center center no-repeat;
+      background: url("../public/images/alcohol-architecture-bar-260922.jpg") center center no-repeat;
       background-size: cover;
       position: absolute;
       top: 0;
@@ -7915,7 +7915,7 @@ footer .footer-dev-info {
     background: black; }
     .page-header-menu::before {
       content: "";
-      background: url("../assets/menu/entries/salad.jpg") center center no-repeat;
+      background: url("../public/menu/entries/salad.jpg") center center no-repeat;
       background-size: cover;
       position: absolute;
       top: 0;
@@ -7929,7 +7929,7 @@ footer .footer-dev-info {
     background: black; }
     .page-header-contact::before {
       content: "";
-      background: url("../assets/images/after-business-hours-architecture-bar-34650.jpg") center center no-repeat;
+      background: url("../public/images/after-business-hours-architecture-bar-34650.jpg") center center no-repeat;
       background-size: cover;
       position: absolute;
       top: 0;
