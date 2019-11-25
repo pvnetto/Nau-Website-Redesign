@@ -45,22 +45,22 @@
                         <form action="">
                             <div class="form-group row">
                                 <div class="col-md-6 col-12 mt-md-0 mt-4">
-                                    <input placeholder="Nome" type="text" class="form-control">
+                                    <input class="form-control" name="name" placeholder="Nome" type="text" required minlength="3">
                                 </div>
                                 <div class="col-md-6 col-12 mt-md-0 mt-4">
-                                    <input placeholder="E-Mail" type="email" class="form-control">
+                                    <input class="form-control" name="email" placeholder="E-mail" type="text" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col-sm-4 col-6 mt-sm-0 mt-4">
-                                    <input placeholder="Telefone" type="tel" class="form-control">
+                                    <input placeholder="Telefone" name="phone" type="tel" class="form-control" required>
                                 </div>
                                 <div class="col-sm-4 col-6 mt-sm-0 mt-4">
-                                    <input placeholder="Celular" type="tel" class="form-control">
+                                    <input placeholder="Celular" name="alt-phone" type="tel" class="form-control">
                                 </div>
                                 <div class="col-sm-4 col-8 mt-sm-0 mt-4">
-                                    <input placeholder="CPF" type="text" class="form-control">
+                                    <input placeholder="CPF" name="cpf" type="text" class="form-control" required minlength="11" maxlength="11">
                                 </div>
                             </div>
 
@@ -91,7 +91,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <button type="submit" class="btn btn-outline-dark btn-lg mx-auto mt-4">ENVIAR</button>
+                                <button type="submit" method="post" class="btn btn-outline-dark btn-lg mx-auto mt-4">ENVIAR</button>
                             </div>
                         </form>
 
@@ -112,6 +112,10 @@
                 </div>
             </section>
 
+            <div class="collapse alert alert-fixed alert-success" role="alert">
+                Mensagem enviada com sucesso. Entraremos em contato em breve!
+            </div>
+
             <footer></footer>
         </div>
     </div>
@@ -120,6 +124,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

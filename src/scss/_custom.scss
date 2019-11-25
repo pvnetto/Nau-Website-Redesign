@@ -22,6 +22,14 @@ $font-family-base: 'Open Sans', sans-serif;
     padding: 1rem 3.5rem;
 }
 
+form {
+    .form-control {
+        &:focus {
+            border: 1px solid $secondary;
+        }
+    }
+}
+
 p {
     font-size: 1.2rem;
 }
