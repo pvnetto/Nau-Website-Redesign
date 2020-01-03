@@ -12,3 +12,7 @@ npm-debug.log
 # Docker
 Dockerfile
 docker-compose.yml
+
+
+# Local files
+docs/
